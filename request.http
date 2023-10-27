@@ -1,0 +1,21 @@
+POST http://localhost:3000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "name":"fahmi",
+    "email":"fahmitestingregister1@mail.com",
+    "password":"fahmi12345",
+    "password_confirmation":"fahmi12345"
+}
+###
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email":"fahmitestingregister@mail.com",
+    "password":"fahmi12345"
+}
+
+###
+GET http://localhost:3000/api/v1/auth/whoami
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjk4MzczODM3fQ.ClGi-J_X4_lFzS8IcV60mLHh7MvLO_Y7sAs4gG2Neeo
